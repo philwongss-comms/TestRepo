@@ -1,0 +1,10 @@
+# A simple function to test
+def add(a, b):
+    return a + b
+
+def validate_price(price):
+    if price <= 0:
+        raise ValueError("Price must be greater than 0")
+    if price > 1000:
+        raise ValueError("Price must be less than or equal to 1000")
+    return True
